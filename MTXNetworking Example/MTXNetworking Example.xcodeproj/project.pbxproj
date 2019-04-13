@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578B9D332261E030003D8B6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D322261E030003D8B6E /* AppDelegate.m */; };
+		578B9D362261E030003D8B6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D352261E030003D8B6E /* ViewController.m */; };
+		578B9D392261E030003D8B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578B9D372261E030003D8B6E /* Main.storyboard */; };
+		578B9D3C2261E030003D8B6E /* MTXNetworking_Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D3A2261E030003D8B6E /* MTXNetworking_Example.xcdatamodeld */; };
+		578B9D3E2261E032003D8B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578B9D3D2261E032003D8B6E /* Assets.xcassets */; };
+		578B9D412261E032003D8B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578B9D3F2261E032003D8B6E /* LaunchScreen.storyboard */; };
+		578B9D442261E032003D8B6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D432261E032003D8B6E /* main.m */; };
+		578B9D4E2261E033003D8B6E /* MTXNetworking_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D4D2261E033003D8B6E /* MTXNetworking_ExampleTests.m */; };
+		578B9D592261E033003D8B6E /* MTXNetworking_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D582261E033003D8B6E /* MTXNetworking_ExampleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		578B9D4A2261E032003D8B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578B9D262261E030003D8B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578B9D2D2261E030003D8B6E;
+			remoteInfo = "MTXNetworking Example";
+		};
+		578B9D552261E033003D8B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578B9D262261E030003D8B6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578B9D2D2261E030003D8B6E;
+			remoteInfo = "MTXNetworking Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		578B9D2E2261E030003D8B6E /* MTXNetworking Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTXNetworking Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		578B9D312261E030003D8B6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		578B9D322261E030003D8B6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		578B9D342261E030003D8B6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		578B9D352261E030003D8B6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		578B9D382261E030003D8B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		578B9D3B2261E030003D8B6E /* MTXNetworking_Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTXNetworking_Example.xcdatamodel; sourceTree = "<group>"; };
+		578B9D3D2261E032003D8B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		578B9D402261E032003D8B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		578B9D422261E032003D8B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578B9D432261E032003D8B6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		578B9D492261E032003D8B6E /* MTXNetworking ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTXNetworking ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		578B9D4D2261E033003D8B6E /* MTXNetworking_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTXNetworking_ExampleTests.m; sourceTree = "<group>"; };
+		578B9D4F2261E033003D8B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578B9D542261E033003D8B6E /* MTXNetworking ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTXNetworking ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		578B9D582261E033003D8B6E /* MTXNetworking_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTXNetworking_ExampleUITests.m; sourceTree = "<group>"; };
+		578B9D5A2261E033003D8B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578B9D682261E0B7003D8B6E /* MTXCompatibilityMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTXCompatibilityMacros.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		578B9D2B2261E030003D8B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B9D462261E032003D8B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B9D512261E033003D8B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578B9D252261E030003D8B6E = {
+			isa = PBXGroup;
+			children = (
+				578B9D662261E05F003D8B6E /* MTXNetworking */,
+				578B9D672261E067003D8B6E /* UIKit+MTXNetworking */,
+				578B9D302261E030003D8B6E /* MTXNetworking Example */,
+				578B9D4C2261E033003D8B6E /* MTXNetworking ExampleTests */,
+				578B9D572261E033003D8B6E /* MTXNetworking ExampleUITests */,
+				578B9D2F2261E030003D8B6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		578B9D2F2261E030003D8B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578B9D2E2261E030003D8B6E /* MTXNetworking Example.app */,
+				578B9D492261E032003D8B6E /* MTXNetworking ExampleTests.xctest */,
+				578B9D542261E033003D8B6E /* MTXNetworking ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578B9D302261E030003D8B6E /* MTXNetworking Example */ = {
+			isa = PBXGroup;
+			children = (
+				578B9D312261E030003D8B6E /* AppDelegate.h */,
+				578B9D322261E030003D8B6E /* AppDelegate.m */,
+				578B9D342261E030003D8B6E /* ViewController.h */,
+				578B9D352261E030003D8B6E /* ViewController.m */,
+				578B9D372261E030003D8B6E /* Main.storyboard */,
+				578B9D3D2261E032003D8B6E /* Assets.xcassets */,
+				578B9D3F2261E032003D8B6E /* LaunchScreen.storyboard */,
+				578B9D422261E032003D8B6E /* Info.plist */,
+				578B9D432261E032003D8B6E /* main.m */,
+				578B9D3A2261E030003D8B6E /* MTXNetworking_Example.xcdatamodeld */,
+			);
+			path = "MTXNetworking Example";
+			sourceTree = "<group>";
+		};
+		578B9D4C2261E033003D8B6E /* MTXNetworking ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				578B9D4D2261E033003D8B6E /* MTXNetworking_ExampleTests.m */,
+				578B9D4F2261E033003D8B6E /* Info.plist */,
+			);
+			path = "MTXNetworking ExampleTests";
+			sourceTree = "<group>";
+		};
+		578B9D572261E033003D8B6E /* MTXNetworking ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				578B9D582261E033003D8B6E /* MTXNetworking_ExampleUITests.m */,
+				578B9D5A2261E033003D8B6E /* Info.plist */,
+			);
+			path = "MTXNetworking ExampleUITests";
+			sourceTree = "<group>";
+		};
+		578B9D662261E05F003D8B6E /* MTXNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				578B9D682261E0B7003D8B6E /* MTXCompatibilityMacros.h */,
+			);
+			name = MTXNetworking;
+			path = ../MTXNetworking;
+			sourceTree = "<group>";
+		};
+		578B9D672261E067003D8B6E /* UIKit+MTXNetworking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UIKit+MTXNetworking";
+			path = "../UIKit+MTXNetworking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		578B9D2D2261E030003D8B6E /* MTXNetworking Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578B9D5D2261E033003D8B6E /* Build configuration list for PBXNativeTarget "MTXNetworking Example" */;
+			buildPhases = (
+				578B9D2A2261E030003D8B6E /* Sources */,
+				578B9D2B2261E030003D8B6E /* Frameworks */,
+				578B9D2C2261E030003D8B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTXNetworking Example";
+			productName = "MTXNetworking Example";
+			productReference = 578B9D2E2261E030003D8B6E /* MTXNetworking Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		578B9D482261E032003D8B6E /* MTXNetworking ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578B9D602261E033003D8B6E /* Build configuration list for PBXNativeTarget "MTXNetworking ExampleTests" */;
+			buildPhases = (
+				578B9D452261E032003D8B6E /* Sources */,
+				578B9D462261E032003D8B6E /* Frameworks */,
+				578B9D472261E032003D8B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				578B9D4B2261E032003D8B6E /* PBXTargetDependency */,
+			);
+			name = "MTXNetworking ExampleTests";
+			productName = "MTXNetworking ExampleTests";
+			productReference = 578B9D492261E032003D8B6E /* MTXNetworking ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		578B9D532261E033003D8B6E /* MTXNetworking ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578B9D632261E033003D8B6E /* Build configuration list for PBXNativeTarget "MTXNetworking ExampleUITests" */;
+			buildPhases = (
+				578B9D502261E033003D8B6E /* Sources */,
+				578B9D512261E033003D8B6E /* Frameworks */,
+				578B9D522261E033003D8B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				578B9D562261E033003D8B6E /* PBXTargetDependency */,
+			);
+			name = "MTXNetworking ExampleUITests";
+			productName = "MTXNetworking ExampleUITests";
+			productReference = 578B9D542261E033003D8B6E /* MTXNetworking ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		578B9D262261E030003D8B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "MTX Software Technology Co.,Ltd.";
+				TargetAttributes = {
+					578B9D2D2261E030003D8B6E = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					578B9D482261E032003D8B6E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 578B9D2D2261E030003D8B6E;
+					};
+					578B9D532261E033003D8B6E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 578B9D2D2261E030003D8B6E;
+					};
+				};
+			};
+			buildConfigurationList = 578B9D292261E030003D8B6E /* Build configuration list for PBXProject "MTXNetworking Example" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 578B9D252261E030003D8B6E;
+			productRefGroup = 578B9D2F2261E030003D8B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				578B9D2D2261E030003D8B6E /* MTXNetworking Example */,
+				578B9D482261E032003D8B6E /* MTXNetworking ExampleTests */,
+				578B9D532261E033003D8B6E /* MTXNetworking ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		578B9D2C2261E030003D8B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578B9D412261E032003D8B6E /* LaunchScreen.storyboard in Resources */,
+				578B9D3E2261E032003D8B6E /* Assets.xcassets in Resources */,
+				578B9D392261E030003D8B6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B9D472261E032003D8B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B9D522261E033003D8B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		578B9D2A2261E030003D8B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578B9D3C2261E030003D8B6E /* MTXNetworking_Example.xcdatamodeld in Sources */,
+				578B9D362261E030003D8B6E /* ViewController.m in Sources */,
+				578B9D442261E032003D8B6E /* main.m in Sources */,
+				578B9D332261E030003D8B6E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B9D452261E032003D8B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578B9D4E2261E033003D8B6E /* MTXNetworking_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578B9D502261E033003D8B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578B9D592261E033003D8B6E /* MTXNetworking_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		578B9D4B2261E032003D8B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578B9D2D2261E030003D8B6E /* MTXNetworking Example */;
+			targetProxy = 578B9D4A2261E032003D8B6E /* PBXContainerItemProxy */;
+		};
+		578B9D562261E033003D8B6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578B9D2D2261E030003D8B6E /* MTXNetworking Example */;
+			targetProxy = 578B9D552261E033003D8B6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		578B9D372261E030003D8B6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578B9D382261E030003D8B6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		578B9D3F2261E032003D8B6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578B9D402261E032003D8B6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		578B9D5B2261E033003D8B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		578B9D5C2261E033003D8B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		578B9D5E2261E033003D8B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTXNetworking Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = "-Werror-unguarded-availability";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mountain.MTXNetworking-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		578B9D5F2261E033003D8B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTXNetworking Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = "-Werror-unguarded-availability";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mountain.MTXNetworking-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		578B9D612261E033003D8B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTXNetworking ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mountain.MTXNetworking-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTXNetworking Example.app/MTXNetworking Example";
+			};
+			name = Debug;
+		};
+		578B9D622261E033003D8B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTXNetworking ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mountain.MTXNetworking-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTXNetworking Example.app/MTXNetworking Example";
+			};
+			name = Release;
+		};
+		578B9D642261E033003D8B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTXNetworking ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mountain.MTXNetworking-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MTXNetworking Example";
+			};
+			name = Debug;
+		};
+		578B9D652261E033003D8B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTXNetworking ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mountain.MTXNetworking-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MTXNetworking Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		578B9D292261E030003D8B6E /* Build configuration list for PBXProject "MTXNetworking Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578B9D5B2261E033003D8B6E /* Debug */,
+				578B9D5C2261E033003D8B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578B9D5D2261E033003D8B6E /* Build configuration list for PBXNativeTarget "MTXNetworking Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578B9D5E2261E033003D8B6E /* Debug */,
+				578B9D5F2261E033003D8B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578B9D602261E033003D8B6E /* Build configuration list for PBXNativeTarget "MTXNetworking ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578B9D612261E033003D8B6E /* Debug */,
+				578B9D622261E033003D8B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578B9D632261E033003D8B6E /* Build configuration list for PBXNativeTarget "MTXNetworking ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578B9D642261E033003D8B6E /* Debug */,
+				578B9D652261E033003D8B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		578B9D3A2261E030003D8B6E /* MTXNetworking_Example.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				578B9D3B2261E030003D8B6E /* MTXNetworking_Example.xcdatamodel */,
+			);
+			currentVersion = 578B9D3B2261E030003D8B6E /* MTXNetworking_Example.xcdatamodel */;
+			path = MTXNetworking_Example.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 578B9D262261E030003D8B6E /* Project object */;
+}
