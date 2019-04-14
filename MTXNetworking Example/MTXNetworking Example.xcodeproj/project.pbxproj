@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5727FDDF2262D88200EAFE89 /* MTXURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5727FDDE2262D88200EAFE89 /* MTXURLRequestSerialization.m */; };
 		578B9D332261E030003D8B6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D322261E030003D8B6E /* AppDelegate.m */; };
 		578B9D362261E030003D8B6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578B9D352261E030003D8B6E /* ViewController.m */; };
 		578B9D392261E030003D8B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578B9D372261E030003D8B6E /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5727FDDD2262D88200EAFE89 /* MTXURLRequestSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTXURLRequestSerialization.h; sourceTree = "<group>"; };
+		5727FDDE2262D88200EAFE89 /* MTXURLRequestSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTXURLRequestSerialization.m; sourceTree = "<group>"; };
 		578B9D2E2261E030003D8B6E /* MTXNetworking Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTXNetworking Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578B9D312261E030003D8B6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		578B9D322261E030003D8B6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				578B9D682261E0B7003D8B6E /* MTXCompatibilityMacros.h */,
+				5727FDDD2262D88200EAFE89 /* MTXURLRequestSerialization.h */,
+				5727FDDE2262D88200EAFE89 /* MTXURLRequestSerialization.m */,
 			);
 			name = MTXNetworking;
 			path = ../MTXNetworking;
@@ -289,6 +294,7 @@
 				578B9D362261E030003D8B6E /* ViewController.m in Sources */,
 				578B9D442261E032003D8B6E /* main.m in Sources */,
 				578B9D332261E030003D8B6E /* AppDelegate.m in Sources */,
+				5727FDDF2262D88200EAFE89 /* MTXURLRequestSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

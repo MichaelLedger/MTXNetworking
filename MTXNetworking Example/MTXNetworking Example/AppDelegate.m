@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MTXCompatibilityMacros.h"
+#import "MTXURLRequestSerialization.h"
 
 @interface AppDelegate ()
 

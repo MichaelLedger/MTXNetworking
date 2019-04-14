@@ -6,6 +6,7 @@
 //  Copyright © 2019 MTX Software Technology Co.,Ltd. All rights reserved.
 //
 
+// AFCompatibilityMacros.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
