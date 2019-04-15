@@ -55,6 +55,59 @@ NS_ASSUME_NONNULL_BEGIN
  第二种则是一一比较字符串的每一个字符是否相等.
  */
 
+//URL中文等特殊字符转码
+/*stringByAddingPercentEscapesUsingEncoding(只对 `#%^{}[]|\"<> 加空格共14个字符编码，不包括”&?”等符号), ios9将淘汰，建议用stringByAddingPercentEncodingWithAllowedCharacters方法  */
+//_logo = [autoString(value) stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//_logo = [autoString(value) stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+
+/*
+ CFStringRef encodedCFString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+ (__bridge CFStringRef) url,
+ nil,
+ CFSTR("?!@#$^&%*+,:;='\"`<>()[]{}/\\| "),
+ kCFStringEncodingUTF8);
+ NSString *encodedString1 = [[NSString alloc] initWithString:(__bridge_transfer NSString*) encodedCFString];
+ */
+
+/*
+ NSString *charactersToEscape = @"?!@#$^&%*+,:;='\"`<>()[]{}/\\| ";
+ NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
+ NSString *encodedUrl = [url stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+ */
+
+/*
+ NSString *urlString = @"http://192.168.0.125:10122/vue/#/punch/limitactive?id=9";
+ NSString *escapedUrlString1 = MTXPercentEscapedStringFromString(urlString);
+ NSLog(@"escapedUrlString1: %@", escapedUrlString1);
+ // escapedUrlString1: http%3A//192.168.0.125%3A10122/vue/%23/punch/limitactive?id%3D9
+ 
+ NSString *escapedUrlString2 = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+ NSLog(@"escapedUrlString2: %@", escapedUrlString2);
+ // escapedUrlString2: http://192.168.0.125:10122/vue/%23/punch/limitactive?id=9
+ 
+ NSString *escapedUrlString3 = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+ NSLog(@"escapedUrlString3: %@", escapedUrlString3);
+ // escapedUrlString3: http://192.168.0.125:10122/vue/%23/punch/limitactive?id=9
+ 
+ NSString *decodedString1 = [escapedUrlString1 stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+ NSLog(@"decodedString1: %@", decodedString1);
+ // decodedString1: http://192.168.0.125:10122/vue/#/punch/limitactive?id=9
+ 
+ NSString *decodedString2  =
+ (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,
+ (__bridge CFStringRef)escapedUrlString1,
+ CFSTR(""),
+ CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+ NSLog(@"decodedString2: %@", decodedString2);
+ // decodedString2: http://192.168.0.125:10122/vue/#/punch/limitactive?id=9
+ */
+
+/*
+ - (nullable NSString *)stringByAddingPercentEscapesUsingEncoding:(NSStringEncoding)enc API_DEPRECATED("Use -stringByAddingPercentEncodingWithAllowedCharacters: instead, which always uses the recommended UTF-8 encoding, and which encodes for a specific URL component or subcomponent since each URL component or subcomponent has different rules for what characters are valid.", macos(10.0,10.11), ios(2.0,9.0), watchos(2.0,2.0), tvos(9.0,9.0));
+ 
+ - (nullable NSString *)stringByReplacingPercentEscapesUsingEncoding:(NSStringEncoding)enc API_DEPRECATED("Use -stringByRemovingPercentEncoding instead, which always uses the recommended UTF-8 encoding.", macos(10.0,10.11), ios(2.0,9.0), watchos(2.0,2.0), tvos(9.0,9.0));
+ */
+
 /**
  Returns a percent-escaped string following RFC 3986 for a query string key or value.
  RFC 3986 states that the following characters are "reserved" characters.
