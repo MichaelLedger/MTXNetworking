@@ -55,6 +55,8 @@ NS_ASSUME_NONNULL_BEGIN
  第二种则是一一比较字符串的每一个字符是否相等.
  */
 
+#pragma mark - URL中文、特殊符号和空格的转码 (当组件中的普通数据包含保留字符时，需要对其进行URL编码！！！)
+
 /*stringByAddingPercentEscapesUsingEncoding(只对 `#%^{}[]|\"<> 加空格共14个字符编码，不包括”&?”等符号), ios9将淘汰，建议用stringByAddingPercentEncodingWithAllowedCharacters方法  */
 /*
  - (nullable NSString *)stringByAddingPercentEscapesUsingEncoding:(NSStringEncoding)enc API_DEPRECATED("Use -stringByAddingPercentEncodingWithAllowedCharacters: instead, which always uses the recommended UTF-8 encoding, and which encodes for a specific URL component or subcomponent since each URL component or subcomponent has different rules for what characters are valid.", macos(10.0,10.11), ios(2.0,9.0), watchos(2.0,2.0), tvos(9.0,9.0));
@@ -78,7 +80,6 @@ NS_ASSUME_NONNULL_BEGIN
  kCFStringEncodingUTF8));
  */
 
-#pragma mark - URL中文、特殊符号和空格的转码 (当组件中的普通数据包含保留字符时，需要对其进行URL编码,而不是对整个Url进行编码！！！)
 /*
  通常如果一样东西需要编码，说明这样东西并不适合传输。原因多种多样，如Size过大，包含隐私数据，对于Url来说，之所以要进行编码，是因为Url中有些字符会引起歧义。
  
