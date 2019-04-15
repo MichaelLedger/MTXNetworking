@@ -18,8 +18,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     NSLog(@"MTX_CAN_USE_AT_AVAILABLE: %d", MTX_CAN_USE_AT_AVAILABLE);
     NSLog(@"MTX_CAN_INCLUDE_SESSION_TASK_METRICS: %d", MTX_CAN_INCLUDE_SESSION_TASK_METRICS);
+    
+    NSString *string = @"😯你😯😯";
+    NSRange range = [string rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, 4)];
+    NSString * result = [string substringWithRange:range];
+    NSLog(@"location:%ld\nlength:%ld\nresult:%@", range.location, range.length, result);
+    /*
+     location:0
+     length:5
+     result:😯你😯
+     */
+    
+    NSString *urlString = @"http://192.168.0.125:10122/vue/#/punch/limitactive";
+    NSString *escapedUrlString = MTXPercentEscapedStringFromString(urlString);
+    NSLog(@"escapedUrlString: %@", escapedUrlString);
+    /*
+     escapedUrlString: http%3A//192.168.0.125%3A10122/vue/%23/punch/limitactive
+     */
+    
+    NSDictionary *params = @{@"dyId"    : @(888888),
+                             @"userId"  : @(13232),
+                             @"userName": @"MTXNetworking",
+                             @"userLogo": @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555320233263&di=5493da76bc87cf7d985c877fc0e0027b&imgtype=0&src=http%3A%2F%2Fwerkstette.dk%2Fwp-content%2Fuploads%2F2015%2F09%2FEntertainment_Weekly_Photographer_Marc_Hom_British_Actor_Charlie_Hunnam_as_King_Arthur_Retouch_Werkstette10-770x841.jpg",
+                             @"content" : @"TEST-Cotent"
+                             };
+    NSString *queryString = MTXQueryStringFromParameters(params);
+    NSLog(@"queryString: %@", queryString);
+    /*
+     queryString: content=TEST-Cotent&dyId=888888&userId=13232&userLogo=https%3A//timgsa.baidu.com/timg?image%26quality%3D80%26size%3Db9999_10000%26sec%3D1555320233263%26di%3D5493da76bc87cf7d985c877fc0e0027b%26imgtype%3D0%26src%3Dhttp%253A%252F%252Fwerkstette.dk%252Fwp-content%252Fuploads%252F2015%252F09%252FEntertainment_Weekly_Photographer_Marc_Hom_British_Actor_Charlie_Hunnam_as_King_Arthur_Retouch_Werkstette10-770x841.jpg&userName=MTXNetworking
+     */
+    
     return YES;
 }
 
