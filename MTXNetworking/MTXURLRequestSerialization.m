@@ -13,7 +13,7 @@ NSString * MTXPercentEscapedStringFromString(NSString *string) {
 //    static NSString * const kMTXCharacterGeneralDelimitersToEncode = @":#[]@"; // does not include "?" or "/" due to RFC 3986 - Section 3.4
 //    static NSString * const kMTXCharacterSubDelimitersToEncode = @"!$&'()*+,;=";
     
-    //URLQueryAllowedCharacterSet包含："*","~",":","+","$",",",";","-","&","=",".","'","/","(","?","!","@",")","
+    //URLQueryAllowedCharacterSet包含："*","~",":","+","$",",",";","-","&","=",".","'","/","(","?","!","@",")","_"
     //因为URLQueryAllowedCharacterSet中包含上述部分的保留字符,其余不包含的保留字符可以直接忽略，因为默认会进行编码，URLQueryAllowedCharacterSet包含的保留字符不会进行URL编码
     static NSString * const kMTXCharacterGeneralDelimitersToEncode = @":@";
     static NSString * const kMTXCharacterSubDelimitersToEncode = @"!$&'()*+,;=";
